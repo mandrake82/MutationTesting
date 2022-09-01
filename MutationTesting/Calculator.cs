@@ -19,7 +19,6 @@
 
         public int Divide(int first, int second)
         {
-            if (second > 100) return 0;
             return first / second;
         }
 
