@@ -20,6 +20,7 @@ namespace MutationTesting.Tests
 
         [Theory]
         [InlineData(5, 5, 0)]
+        [InlineData(10, 5, 5)]
         public void Test_Subtract(int first, int second, int expected)
         {
             // Arrange and Act
@@ -31,6 +32,7 @@ namespace MutationTesting.Tests
 
         [Theory]
         [InlineData(1, 1, 1)]
+        [InlineData(2, 3, 6)]
         public void Test_Multiply(int first, int second, int expected)
         {
             // Arrange and Act
@@ -42,6 +44,8 @@ namespace MutationTesting.Tests
 
         [Theory]
         [InlineData(1, 1, 1)]
+        [InlineData(4, 2, 2)]
+        [InlineData(5, 2, 2)]
         public void Test_Divide(int first, int second, int expected)
         {
             // Arrange and Act

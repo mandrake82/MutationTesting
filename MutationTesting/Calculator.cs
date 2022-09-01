@@ -9,7 +9,7 @@
 
         public int Subtract(int first, int second)
         {
-            return second - first;
+            return first - second;
         }
 
         public int Multiply(int first, int second)
@@ -19,11 +19,7 @@
 
         public int Divide(int first, int second)
         {
-            if (second == 0)
-            {
-                throw new DivideByZeroException();
-            }
-
+            if (second > 100) return 0;
             return first / second;
         }
 
