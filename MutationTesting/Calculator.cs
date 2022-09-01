@@ -9,7 +9,7 @@
 
         public int Subtract(int first, int second)
         {
-            return second - first;
+            return first - second;
         }
 
         public int Multiply(int first, int second)
