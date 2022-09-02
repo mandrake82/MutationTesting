@@ -22,5 +22,10 @@
             return first / second;
         }
 
+        public int Squared(int first)
+        {
+            return first * first;
+        }
+
     }
 } 
