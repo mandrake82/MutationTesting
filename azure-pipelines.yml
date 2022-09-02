@@ -24,3 +24,9 @@ steps:
     targetType: 'inline'
     pwsh: true
     script: $(Agent.BuildDirectory)/tools/dotnet-stryker
+
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: '$(Pipeline.Workspace)'
+    artifact: 'Artifact'
+    publishLocation: 'pipeline'
