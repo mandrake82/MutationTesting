@@ -1,0 +1,8 @@
+﻿{
+  "stryker-config": {
+    "reporters": [
+      "progress",
+      "html"
+    ]
+  }
+}
