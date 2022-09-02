@@ -19,7 +19,7 @@ steps:
 - task: Powershell@2
   displayName: 'Run dotnet-stryker'
   inputs:
-    workingDirectory: <test-project-folder-here>
+    workingDirectory: '.\MutationTesting.Tests'
     targetType: 'inline'
     pwsh: true
     script: $(Agent.BuildDirectory)/tools/dotnet-stryker
