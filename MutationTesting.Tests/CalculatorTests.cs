@@ -64,5 +64,15 @@ namespace MutationTesting.Tests
             // Assert
             result.Should().Throw<DivideByZeroException>();
         }
+
+        [Fact]
+        public void Test_Square()
+        {
+            // Arrange and Act
+            var result = _sut.Squared(3);
+
+            // Assert
+            result.Should().Be(9);
+        }
     }
 }
